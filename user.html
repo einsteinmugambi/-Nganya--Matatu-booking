@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matatu Booking System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Matatu Booking System</h1>
+        <p>Book your matatu with just a few clicks!</p>
+    </header>
+    <form action="submit_booking.php" method="post">
+        <label for="pickup">Pickup Location:</label><br>
+        <input type="text" id="pickup" name="pickup" required><br>
+        <label for="destination">Destination:</label><br>
+        <input type="text" id="destination" name="destination" required><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" required><br>
+        <input type="submit" value="Book Now">
+    </form>
+    <div class="booking-history">
+        <h2>Booking History</h2>
+        <ul>
+            <li><a href="booking.html">Booking 1</a></li>
+            <li><a href="booking.html">Booking 2</a></li>
+            <li><a href="booking.html">Booking 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>
